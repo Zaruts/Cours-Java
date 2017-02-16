@@ -87,7 +87,7 @@ public class Ville {
 		if(A.getNbreHabitants() > this.nbreHabitants)
 			str = A.getNom()+" est une ville plus peuplée que " +this.nomVille;
 		else
-			str = this.nomVille + " est une ville moins peupl�e que " + A.getNom();
+			str = this.nomVille + " est une ville moins peuplée que " + A.getNom();
 		return str;
 	}
 	
