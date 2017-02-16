@@ -12,9 +12,9 @@ public class Capitale extends Ville {
 		this.monument = monument;
 	}
 	
-	public String afficher(){
-		String str = super.afficher() + "\n\t ===>" +this.monument+ " en est un monument notable";
-		return str;
+	public void afficher(){
+		super.afficher();
+		System.out.println("\n\t ===>" +this.monument+ " en est un monument notable");
 	}
 	
 	public String toString(){

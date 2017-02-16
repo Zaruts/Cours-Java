@@ -8,7 +8,7 @@ public class Ville {
 	protected static int nbreInstancesBis = 0;
 	
 	public Ville(){
-		System.out.println("Création d'une ville ! \n");
+		System.out.println("CrÃ©ation d'une ville ! \n");
 		nomVille = "Inconnu";
 		nomPays = "Inconnu";
 		nbreHabitants = 0;
@@ -19,7 +19,7 @@ public class Ville {
 	
 	public Ville(String pNom, String pPays, int pNbre)
 	{
-		System.out.println("Création d'une ville avec paramètres ! \n");
+		System.out.println("CrÃ©ation d'une ville avec paramÃ¨tres ! \n");
 		nomVille = pNom;
 		nomPays = pPays;
 		nbreHabitants = pNbre;
@@ -73,21 +73,21 @@ public class Ville {
 		this.categorie = categories[i];
 	}
 	
-	public String afficher(){
-		return "\t" +this.nomVille+ " est une ville située en " +this.nomPays+ ", elle comporte : " +this.nbreHabitants+ " habitant(s), ce qui en fait une ville de catégorie : " +this.categorie;
+	public void afficher(){
+		System.out.println("\t" +this.nomVille+ " est une ville situÃ©e en " +this.nomPays+ ", elle comporte : " +this.nbreHabitants+ " habitant(s), ce qui en fait une ville de catÃ©gorie : " +this.categorie);
 	}
 	
 	public String toString(){
-		return "\t" +this.nomVille+ " est une ville située en " +this.nomPays+ ", elle comporte : " +this.nbreHabitants+ " habitant(s), ce qui en fait une ville de catégorie : " +this.categorie;
+		return "\t" +this.nomVille+ " est une ville situÃ©e en " +this.nomPays+ ", elle comporte : " +this.nbreHabitants+ " habitant(s), ce qui en fait une ville de catÃ©gorie : " +this.categorie;
 	}
 	
 	public String comparer(Ville A){
 		String str = new String();
 		
 		if(A.getNbreHabitants() > this.nbreHabitants)
-			str = A.getNom()+" est une ville plus peuplée que " +this.nomVille;
+			str = A.getNom()+" est une ville plus peuplÃ©e que " +this.nomVille;
 		else
-			str = this.nomVille + " est une ville moins peuplée que " + A.getNom();
+			str = this.nomVille + " est une ville moins peuplï¿½e que " + A.getNom();
 		return str;
 	}
 	

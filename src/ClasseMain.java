@@ -20,7 +20,7 @@ public class ClasseMain {
 		}
 		
 		for(Ville V : tableau){
-			System.out.println(V.toString()+"\n");
+			V.afficher();
 		}
 
 	}
